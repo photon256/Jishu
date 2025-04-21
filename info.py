@@ -13,16 +13,16 @@ def is_enabled(value, default):
 #---------------------------------------------------------------
 #---------------------------------------------------------------         ,
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '21714374'))
-API_HASH = environ.get('API_HASH', '700092e37d7da9a7b781994b7503a488')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7982207878:AAGzVo_N6ZzLmPzTpcr8SGDpaZGPkaPI_uM')
+API_ID = int(environ.get('API_ID', '16253557'))
+API_HASH = environ.get('API_HASH', '81171c25e4cb9062cb10da8b7730432a')
+BOT_TOKEN = environ.get('BOT_TOKEN', '')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6243694287 6660736046').split()]
 USERNAME = environ.get('USERNAME', "https://t.me/DeathSupportBot") # ADMIN USERNAME
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002097438993'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/DeathMovies_request')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002086509550').split()]
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002205282436'))
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+klCxRlRbGBw0Yjgx')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002131144121').split()]
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://ayushop:ayushop210@cluster0.gklnc.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
@@ -31,14 +31,14 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'My_Tg_files')
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 #----------- There will be channel id add in all these ---------
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002388476066'))  # set shortner log channel
-DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002388476066')) # The movie you upload in it will be deleted from the bot.
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001525395841'))
-auth_channel = environ.get('AUTH_CHANNEL', '-1002086509550')
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1001974657184'))
-request_channel = environ.get('REQUEST_CHANNEL', '-1002286564383') # If anyone sends a request message to your bot, you will get it in this channel.
-MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1001813495612')) # 
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/death_movies') #Support group link ( make sure bot is admin )
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002205282436'))  # set shortner log channel
+DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1002205282436')) # The movie you upload in it will be deleted from the bot.
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002205282436'))
+auth_channel = environ.get('AUTH_CHANNEL', '-1002303403489')
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002302335280'))
+request_channel = environ.get('REQUEST_CHANNEL', '-1002303403489') # If anyone sends a request message to your bot, you will get it in this channel.
+MOVIE_UPDATE_CHANNEL = int(environ.get('MOVIE_UPDATE_CHANNEL', '-1002303403489')) # 
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'https://t.me/+klCxRlRbGBw0Yjgx') #Support group link ( make sure bot is admin )
 #---------------------------------------------------------------
 #---------------------------------------------------------------
 IS_VERIFY = is_enabled('IS_VERIFY', False)
